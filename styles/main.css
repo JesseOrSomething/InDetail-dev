@@ -161,6 +161,10 @@ a { color: inherit; text-decoration: none; }
 /* Stacked utility for combined about/contact */
 .stack { display: grid; gap: 32px; }
 .divider { height: 1px; border: 0; background: var(--stroke); }
+.substack { display: grid; gap: 12px; }
+.contact-list { margin: 0; }
+.contact-list dt { font-weight: 600; color: var(--text); }
+.contact-list dd { margin: 0 0 6px 0; color: var(--muted); }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--stroke); padding: 28px 0; color: var(--muted); background: #fff; }
