@@ -1,3 +1,6 @@
+.mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.mini-card { background: #fff; border-radius: 12px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+@media (max-width: 640px) { .mini-grid { grid-template-columns: 1fr; } }
 /* Base */
 :root {
 	--bg: #f7f3ee; /* faint beige base */
