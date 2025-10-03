@@ -157,6 +157,7 @@ a { color: inherit; text-decoration: none; }
 /* Two column */
 .two-col { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: start; }
 .card-panel { background: var(--panel); border: 0; border-radius: 12px; padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.subcard { background: #fffdf8; border: 0; border-radius: 12px; padding: 14px; box-shadow: 0 6px 18px rgba(17,17,17,0.06), inset 0 0 0 1px rgba(199,168,123,0.25); }
 .bullets { margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
 /* Stacked utility for combined about/contact */
 .stack { display: grid; gap: 32px; }
