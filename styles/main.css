@@ -78,9 +78,9 @@ a { color: inherit; text-decoration: none; }
 .hero p { color: var(--muted); max-width: 900px; }
 
 /* Filters */
-.filters { display: flex; flex-wrap: wrap; gap: 10px; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
 .filter { 
-	padding: 8px 12px; 
+    padding: 8px 10px; 
 	border: 0; 
 	border-radius: 999px; 
 	background: #fff; 
@@ -167,14 +167,16 @@ a { color: inherit; text-decoration: none; }
 .contact-list dd { margin: 0 0 6px 0; color: var(--muted); }
 
 /* About/Contact compaction and symmetry */
-#about .card-panel { padding: 16px 18px; }
-#about .two-col { grid-template-columns: 1fr 1fr; gap: 16px; }
+#about .card-panel { padding: 14px 16px; }
+#about .two-col { grid-template-columns: 1fr 1fr; gap: 12px; }
 #about h2 { margin: 0 0 8px; }
-#about h3 { margin: 10px 0 6px; }
-#about .bullets { margin: 6px 0 0; }
-#about .bullets li { margin: 0 0 4px; }
+#about h3 { margin: 8px 0 4px; }
+#about .bullets { margin: 4px 0 0; }
+#about .bullets li { margin: 0 0 2px; }
 #about .contact-list dt { margin-top: 4px; }
 #about p { margin: 0; }
+#about .substack { gap: 6px; }
+#about .button, #about .button.secondary { margin-top: 6px; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--stroke); padding: 28px 0; color: var(--muted); background: #fff; }
