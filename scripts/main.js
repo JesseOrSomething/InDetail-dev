@@ -17,6 +17,20 @@
 		});
 	}
 
+	// Theme toggle (persisted)
+	const themeKey = 'indetail-theme';
+	const saved = localStorage.getItem(themeKey);
+	if (saved === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+	const switchEl = bySel('#themeSwitch');
+	if (switchEl) {
+		switchEl.checked = document.documentElement.getAttribute('data-theme') === 'dark';
+		switchEl.addEventListener('change', () => {
+			const dark = switchEl.checked;
+			document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+			localStorage.setItem(themeKey, dark ? 'dark' : 'light');
+		});
+	}
+
 	// Smooth anchor scroll fallback for browsers without CSS smooth-scroll (optional)
 	bySelAll('a[href^="#"]').forEach(a => {
 		a.addEventListener('click', e => {
