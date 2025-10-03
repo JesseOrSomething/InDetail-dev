@@ -140,12 +140,12 @@ a { color: inherit; text-decoration: none; }
 
 /* Grid */
 .grid { list-style: none; padding: 0; margin: 20px 0 0; display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-.card { grid-column: span 4; background: var(--panel); border: 1px solid var(--stroke); border-radius: 12px; overflow: hidden; transition: transform 300ms cubic-bezier(.2,.7,.2,1), box-shadow 300ms cubic-bezier(.2,.7,.2,1); will-change: transform, box-shadow; }
+.card { grid-column: span 4; background: var(--panel); border: 0; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: transform 300ms cubic-bezier(.2,.7,.2,1), box-shadow 300ms cubic-bezier(.2,.7,.2,1); will-change: transform, box-shadow; }
 .card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(17,17,17,0.08); }
 .card img { aspect-ratio: 4 / 3; object-fit: cover; background: #f0ece6; transition: transform 400ms cubic-bezier(.2,.7,.2,1); }
 .card:hover img { transform: scale(1.03); }
 .card-meta { display: flex; gap: 8px; padding: 10px 12px; border-top: 1px solid var(--stroke); }
-.card-meta span { font-size: 12px; padding: 4px 8px; background: #faf7f2; border: 1px solid var(--stroke); border-radius: 999px; color: var(--muted); }
+.card-meta span { font-size: 12px; padding: 4px 8px; background: #fff; border: 0; border-radius: 999px; color: var(--muted); box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
 
 /* Reveal animations */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity 600ms ease, transform 600ms ease; }
